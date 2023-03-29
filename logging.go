@@ -17,6 +17,10 @@ type Logging struct {
 	User     string
 }
 
+func TestPrint() {
+	fmt.Println("Ok")
+}
+
 func PrintErrorValidation(structName, errorMessage, path, methodName string) {
 	fmt.Printf("[INFO] request of %s is invalid: %s at %s - %s\n", structName, errorMessage, path, methodName)
 }
